@@ -1,0 +1,16 @@
+{% extends 'bookings/base.html' %}
+{% block title %}Book a Seat{% endblock %}
+{% block content %}
+<h1>Available Seats for {{ movie.title }}</h1>
+{% for seat in seats %}
+<div class="card">
+    <p>Seat {{ seat.seat_number }} — 
+        {% if seat.is_booked %}
+            <strong>Booked</strong>
+        {% else %}
+            <a href="/bookings/create/?seat={{ seat.id }}&movie={{ movie.id }}" class="btn">Book</a>
+        {% endif %}
+    </p>
+</div>
+{% endfor %}
+{% endblock %}

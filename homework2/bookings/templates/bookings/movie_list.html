@@ -1,0 +1,12 @@
+{% extends 'bookings/base.html' %}
+{% block title %}Movie List{% endblock %}
+{% block content %}
+<h1>Available Movies</h1>
+{% for movie in movies %}
+<div class="card">
+    <h2>{{ movie.title }}</h2>
+    <p>{{ movie.description }}</p>
+    <a href="/seats/?movie={{ movie.id }}" class="btn">Book Now</a>
+</div>
+{% endfor %}
+{% endblock %}
