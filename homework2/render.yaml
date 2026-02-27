@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: movie-theater-booking
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn movie_theater_booking.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: DEBUG
+        value: false
