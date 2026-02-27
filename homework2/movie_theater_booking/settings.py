@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-el-@eqe8-xqhfc-h*iy#u5cdqa3zh@+$5a)#dk&ki4&2h(4yk)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['editor-eboyd3-21.devedu.io', 'app-eboyd3-21.devedu.io','*']
+ALLOWED_HOSTS = ['editor-eboyd3-21.devedu.io', 'app-eboyd3-21.devedu.io', '*', 'https://cs4300-sytx.onrender.com']
 
 # Application definition
 
