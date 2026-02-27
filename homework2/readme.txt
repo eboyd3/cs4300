@@ -2,6 +2,7 @@ Movie Theater Booking System
 A RESTful API built with Django and Django REST Framework for managing movie bookings.
 Website link:
 https://cs4300-sytx.onrender.com/api/
+Go to the other API endpoints (listed below) to see more
 
 Local Setup
 
