@@ -31,6 +31,8 @@ ALLOWED_HOSTS = ['editor-eboyd3-21.devedu.io']
 # Application definition
 
 INSTALLED_APPS = [
+    'bookings.apps.BookingsConfig',
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -104,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'MST'
 
 USE_I18N = True
 
